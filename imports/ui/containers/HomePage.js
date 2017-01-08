@@ -1,16 +1,15 @@
 /**
- * Created by wangdi on 1/1/17.
+ * Created by wangdi on 8/1/17.
  */
 'use strict';
 
 import React, {Component} from 'react';
 
-export default class App extends Component {
-
-    render() {
+export default class HomePage extends Component{
+    render(){
         return (
             <div>
-                App
+                Home
             </div>
         );
     }
