@@ -1,0 +1,12 @@
+header {
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 80px;
+  width: 100%; }
+  header .logo {
+    color: #fff; }
+  header .navigation ul {
+    display: flex; }
+
+/*# sourceMappingURL=header.css.map */
