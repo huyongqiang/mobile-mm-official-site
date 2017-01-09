@@ -12,13 +12,13 @@ export default class Header extends React.Component{
         return (
             <header>
                 <div className="logo">
-                    <h1>Mobile MM Club</h1>
+                    <Link to="/"><img src="/img/logo.png" height={70}/></Link>
                 </div>
                 <div className="navigation">
                     <ul role="nav">
-                        <li><Link to="/news">俱乐部新闻</Link></li>
-                        <li><Link to="/award">获奖信息</Link></li>
-                        <li><Link to="/about">关于MM</Link></li>
+                        <li><Link to="/news" activeClassName="active-link">俱乐部新闻</Link></li>
+                        <li><Link to="/award" activeClassName="active-link">获奖信息</Link></li>
+                        <li><Link to="/about" activeClassName="active-link">关于MM</Link></li>
                     </ul>
                 </div>
             </header>

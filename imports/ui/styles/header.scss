@@ -1,15 +1,29 @@
-header{
+header {
   position: fixed;
   display: flex;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, .8);
   height: 80px;
   width: 100%;
-  .logo{
+  align-items: center;
+  .logo {
     color: #fff;
   }
-  .navigation{
-    ul{
+  .navigation {
+    margin-left: 50px;
+    ul {
       display: flex;
+      list-style-type: none;
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 30px;
+        &:hover{
+          color: dodgerblue;
+        }
+      }
+      .active-link{
+        color: dodgerblue;
+      }
     }
   }
 }
