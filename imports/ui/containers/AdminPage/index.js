@@ -4,12 +4,19 @@
 'use strict';
 
 import React, {Component} from 'react';
+import '../../styles/adminpage.css';
+import DashBoardPanel from '../../components/DashBoardPanel';
 
 export default class AdminPage extends Component{
     render(){
         return (
-            <div>
-                Admin
+            <div className="container">
+                <div className="left-nav">
+                    <DashBoardPanel />
+                </div>
+                <div className="right-contents">
+                    contents
+                </div>
             </div>
         );
     }

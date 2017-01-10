@@ -8,7 +8,7 @@ import React, {Component} from 'react';
 export default class NewsPage extends Component{
     render(){
         return (
-            <div className="container">
+            <div className="App-container">
                 News
             </div>
         );

@@ -17,7 +17,7 @@ export default class Header extends React.Component{
                 <div className="navigation">
                     <ul role="nav">
                         <li><Link to="/news" activeClassName="active-link">俱乐部新闻</Link></li>
-                        <li><Link to="/award" activeClassName="active-link">获奖信息</Link></li>
+                        <li><Link to="/award" activeClassName="active-link">大赛获奖</Link></li>
                         <li><Link to="/about" activeClassName="active-link">关于MM</Link></li>
                     </ul>
                 </div>

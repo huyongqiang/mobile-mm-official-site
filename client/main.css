@@ -9,6 +9,6 @@ html, body{
     flex-direction: column;
 }
 
-.container{
+.App-container{
     margin-top: 80px;
 }

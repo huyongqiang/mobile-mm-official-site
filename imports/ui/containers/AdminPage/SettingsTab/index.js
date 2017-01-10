@@ -5,11 +5,11 @@
 
 import React, {Component} from 'react';
 
-export default class AwardPage extends Component{
+export default class SettingsTab extends Component{
     render(){
         return (
-            <div className="App-container">
-                Award
+            <div>
+                settings
             </div>
         );
     }
