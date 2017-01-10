@@ -4,11 +4,13 @@
 'use strict';
 
 import React, {Component} from 'react';
+import AdminHeader from '../../../components/AdminHeader';
 
 export default class HomeTab extends Component{
     render(){
         return (
-            <div className="admin-contents-container">
+            <div>
+                <AdminHeader title="Home"/>
                 admin home tab
             </div>
         );

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,uBAAuB;EACrB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,4BAAwB;EACpC,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM",
+"sources": ["adminheader.scss"],
+"names": [],
+"file": "adminheader.css"
+}
