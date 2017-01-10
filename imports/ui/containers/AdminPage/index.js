@@ -10,7 +10,7 @@ import DashBoardPanel from '../../components/DashBoardPanel';
 export default class AdminPage extends Component{
     render(){
         return (
-            <div className="container">
+            <div className="admin-container">
                 <div className="left-nav">
                     <DashBoardPanel />
                 </div>

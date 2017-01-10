@@ -1,39 +1,39 @@
-.container{
+.dashboard-container {
   display: flex;
   flex-direction: column;
-  .avatar{
+  .avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
-    img{
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    img {
       width: 70px;
       border-radius: 35px;
     }
-  }
-  .nav-link{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    ul{
-      display: flex;
-      flex-direction: column;
-      list-style-type: none;
+    label{
+      margin-top: 10px;
+      color: #fff;
     }
-    a{
-      margin-bottom: 20px;
+  }
+  .nav-link {
+    a {
+      height: 45px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #ccc;
-      i{
-        margin-right: 15px;
+      color: rgba(255,255,255,.3);
+      font-size: 14px;
+      i {
+        margin-right: 18px;
+        margin-left: 30px;
+        font-size: 19px;
       }
     }
+    .active-link {
+      color: #fff;
+      background-color: dodgerblue;
+    }
   }
-}
-
-.active-link{
-  color: #fff;
-  background-color: dodgerblue;
 }

@@ -1,33 +1,32 @@
-.container {
+.dashboard-container {
   display: flex;
   flex-direction: column; }
-  .container .avatar {
+  .dashboard-container .avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px; }
-    .container .avatar img {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+    .dashboard-container .avatar img {
       width: 70px;
       border-radius: 35px; }
-  .container .nav-link {
+    .dashboard-container .avatar label {
+      margin-top: 10px;
+      color: #fff; }
+  .dashboard-container .nav-link a {
+    height: 45px;
+    margin-bottom: 5px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
-    .container .nav-link ul {
-      display: flex;
-      flex-direction: column;
-      list-style-type: none; }
-    .container .nav-link a {
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #ccc; }
-      .container .nav-link a i {
-        margin-right: 15px; }
-
-.active-link {
-  color: #fff;
-  background-color: dodgerblue; }
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px; }
+    .dashboard-container .nav-link a i {
+      margin-right: 18px;
+      margin-left: 30px;
+      font-size: 19px; }
+  .dashboard-container .nav-link .active-link {
+    color: #fff;
+    background-color: dodgerblue; }
 
 /*# sourceMappingURL=dashboard.css.map */
