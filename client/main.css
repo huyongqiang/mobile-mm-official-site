@@ -4,6 +4,10 @@ html, body{
     padding: 0;
 }
 
+body{
+    font-family: Helvetica, Tahoma, Arial, sans-serif;
+}
+
 .App{
     display: flex;
     flex-direction: column;

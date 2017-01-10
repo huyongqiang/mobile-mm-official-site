@@ -15,7 +15,7 @@ export default class AdminPage extends Component{
                     <DashBoardPanel />
                 </div>
                 <div className="right-contents">
-                    contents
+                    {this.props.children}
                 </div>
             </div>
         );
