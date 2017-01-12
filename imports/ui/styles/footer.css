@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  padding: 0 18%;
+  justify-content: center; }
+  footer .list {
+    display: flex; }
+    footer .list .col {
+      display: flex;
+      flex: 1;
+      flex-direction: column; }
+      footer .list .col a {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 100; }
+  footer label {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 13px; }
+
+/*# sourceMappingURL=footer.css.map */

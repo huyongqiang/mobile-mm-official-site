@@ -5,6 +5,7 @@
 
 import '../styles/homepage.css';
 import React, {Component} from 'react';
+import Footer from '../Footer';
 
 export default class HomePage extends Component {
     render() {
@@ -30,6 +31,7 @@ export default class HomePage extends Component {
                     <div className="info-1">
                         <h1>快点加入我们</h1>
                     </div>
+                    <Footer />
                 </div>
             </div>
         );
