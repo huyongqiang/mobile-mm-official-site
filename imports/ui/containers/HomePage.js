@@ -9,7 +9,9 @@ export default class HomePage extends Component{
     render(){
         return (
             <div className="App-container">
-                Home
+                <div className="gallery">
+                    <img src="/img/gallery3.jpg" width="100%"/>
+                </div>
             </div>
         );
     }

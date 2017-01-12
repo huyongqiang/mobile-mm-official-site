@@ -2,14 +2,17 @@ header {
   position: fixed;
   display: flex;
   background-color: rgba(0, 0, 0, .8);
-  height: 80px;
   width: 100%;
+  height: 80px;
   align-items: center;
+  justify-content: space-between;
   .logo {
     color: #fff;
+    margin-left: 15%;
   }
   .navigation {
     margin-left: 50px;
+    margin-right: 15%;
     ul {
       display: flex;
       list-style-type: none;
