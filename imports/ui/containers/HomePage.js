@@ -3,16 +3,48 @@
  */
 'use strict';
 
+import '../styles/homepage.css';
 import React, {Component} from 'react';
 
-export default class HomePage extends Component{
-    render(){
+export default class HomePage extends Component {
+    render() {
         return (
             <div className="App-container">
-                <div className="gallery">
-                    <img src="/img/gallery3.jpg" width="100%"/>
+                <div className="home-container">
+                    <div className="gallery">
+                        <img src="/img/gallery3.jpg" width="100%"/>
+                    </div>
+                    <div className="latest-news">
+                        <h1>最新状态</h1>
+                        <div className="row">
+                            <Thumbnail />
+                            <Thumbnail />
+                            <Thumbnail />
+                        </div>
+                        <div className="row">
+                            <Thumbnail />
+                            <Thumbnail />
+                            <Thumbnail />
+                        </div>
+                    </div>
+                    <div className="info-1">
+                        <h1>快点加入我们</h1>
+                    </div>
                 </div>
             </div>
+        );
+    }
+}
+
+class Thumbnail extends Component{
+    render(){
+        return (
+            <button className="thumbnail">
+                <div className="container">
+                    <img src="/pic/IMG_0056.JPG" alt="img"/>
+                    <label>获奖啦获奖啦获奖啦获奖啦获奖啦获奖啦获奖啦获奖啦获奖啦</label>
+                </div>
+            </button>
         );
     }
 }
