@@ -4,14 +4,14 @@
 'use strict';
 
 import React, {Component} from 'react';
-import AdminHeader from '../../../components/AdminHeader';
+import AdminHeader from '../../components/AdminHeader';
 
-export default class HomeTab extends Component{
+export default class SettingsTab extends Component{
     render(){
         return (
             <div>
-                <AdminHeader title="Home"/>
-                admin home tab
+                <AdminHeader title="Settings"/>
+                settings
             </div>
         );
     }

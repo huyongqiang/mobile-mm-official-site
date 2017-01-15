@@ -12,7 +12,9 @@ import NewsPage from '../imports/ui/containers/NewsPage';
 
 import AdminHomeTab from '../imports/ui/containers/AdminPage/HomeTab';
 import AdminSettingsTab from '../imports/ui/containers/AdminPage/SettingsTab';
-import AdminContentsManageTab from '../imports/ui/containers/AdminPage/ContentsManageTab';
+import AdminMAboutPageTab from '../imports/ui/containers/AdminPage/MAboutPageTab';
+import AdminMAwardPageTab from '../imports/ui/containers/AdminPage/MAwardPageTab';
+import AdminMHomePageTab from '../imports/ui/containers/AdminPage/MHomePageTab';
 
 Meteor.startup(() => {
     render((
@@ -26,7 +28,9 @@ Meteor.startup(() => {
             <Route path="/admin" component={AdminPage}>
                 <Route path="home" component={AdminHomeTab}/>
                 <Route path="settings" component={AdminSettingsTab}/>
-                <Route path="contents" component={AdminContentsManageTab}/>
+                <Route path="manage_about" component={AdminMAboutPageTab}/>
+                <Route path="manage_home" component={AdminMHomePageTab}/>
+                <Route path="manage_award" component={AdminMAwardPageTab}/>
             </Route>
         </Router>
     ), document.getElementById('root'));

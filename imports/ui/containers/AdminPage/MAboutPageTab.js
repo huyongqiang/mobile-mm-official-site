@@ -4,9 +4,9 @@
 'use strict';
 
 import React, {Component} from 'react';
-import AdminHeader from '../../../components/AdminHeader';
+import AdminHeader from '../../components/AdminHeader';
 
-export default class ContentsManageTab extends Component{
+export default class MAboutPageTab extends Component{
     render(){
         return (
             <div>

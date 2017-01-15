@@ -16,9 +16,11 @@ export default class DashBoardPanel extends Component {
                     <label>Admin</label>
                 </div>
                 <div className="nav-link">
-                    <Link to="/admin/home" activeClassName="active-link"><i className="material-icons">home</i>Home</Link>
-                    <Link to="/admin/contents" activeClassName="active-link"><i className="material-icons">archive</i>Contents</Link>
-                    <Link to="/admin/settings" activeClassName="active-link"><i className="material-icons">settings</i>Settings</Link>
+                    <Link to="/admin/home" activeClassName="active-link"><i className="material-icons">home</i>主页</Link>
+                    <Link to="/admin/manage_home" activeClassName="active-link"><i className="material-icons">archive</i>管理首页页面</Link>
+                    <Link to="/admin/manage_award" activeClassName="active-link"><i className="material-icons">archive</i>管理获奖页面</Link>
+                    <Link to="/admin/manage_about" activeClassName="active-link"><i className="material-icons">archive</i>管理关于页面</Link>
+                    <Link to="/admin/settings" activeClassName="active-link"><i className="material-icons">settings</i>设置</Link>
                 </div>
             </div>
         );
