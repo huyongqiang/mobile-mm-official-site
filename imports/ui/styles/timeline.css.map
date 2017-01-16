@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,mFAAmF",
+"sources": ["timeline.scss"],
+"names": [],
+"file": "timeline.css"
+}
