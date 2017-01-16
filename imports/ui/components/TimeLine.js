@@ -11,6 +11,7 @@ export default class TimeLine extends Component{
         return (
             <div>
                 <div className="timeline">
+                    <i className="material-icons">event</i>
                 </div>
             </div>
         );
