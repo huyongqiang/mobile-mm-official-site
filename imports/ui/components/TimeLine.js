@@ -14,7 +14,12 @@ export default class TimeLine extends Component{
                     <i className="material-icons">event</i>
                 </div>
                 <div className="timeline-contents">
-                    {this.props.contents}
+                    <div className="time">
+                        {this.props.time}
+                    </div>
+                    <div className="contents">
+                        {this.props.contents}
+                    </div>
                 </div>
             </div>
         );
@@ -22,6 +27,7 @@ export default class TimeLine extends Component{
 }
 
 TimeLine.propTypes = {
+    time: PropTypes.string,
     contents: PropTypes.string
 };
 

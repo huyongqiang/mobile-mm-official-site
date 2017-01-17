@@ -19,7 +19,9 @@
     flex: 1;
     padding: 10px;
     position: relative;
-    border-bottom: 2px solid #d7e4ed; }
+    border-bottom: 2px solid #d7e4ed;
+    display: flex;
+    flex-direction: column; }
     .timeline-container .timeline-contents::after {
       content: "";
       position: absolute;
@@ -29,5 +31,9 @@
       width: 0;
       border: 7px solid transparent;
       border-right: 7px solid white; }
+    .timeline-container .timeline-contents .time {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=timeline.css.map */
