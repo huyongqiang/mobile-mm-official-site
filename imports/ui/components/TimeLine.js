@@ -9,9 +9,12 @@ import '../styles/timeline.css';
 export default class TimeLine extends Component{
     render(){
         return (
-            <div>
-                <div className="timeline">
+            <div className="timeline-container">
+                <div className="timeline-icon">
                     <i className="material-icons">event</i>
+                </div>
+                <div className="timeline-contents">
+                    dadasda
                 </div>
             </div>
         );

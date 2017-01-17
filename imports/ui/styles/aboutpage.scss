@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   .row{
     display: flex;
-    padding: 0 15%;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
     h1{
       font-weight: 300;
     }
+  }
+  .align-left{
+    align-self: flex-start;
   }
 }
