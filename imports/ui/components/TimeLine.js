@@ -14,10 +14,14 @@ export default class TimeLine extends Component{
                     <i className="material-icons">event</i>
                 </div>
                 <div className="timeline-contents">
-                    dadasda
+                    {this.props.contents}
                 </div>
             </div>
         );
     }
 }
+
+TimeLine.propTypes = {
+    contents: PropTypes.string
+};
 
