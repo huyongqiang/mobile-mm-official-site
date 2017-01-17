@@ -4,7 +4,7 @@
 'use strict';
 
 import React, {Component} from 'react';
-import '../../styles/adminpage.css';
+import '../../styles/admin_page.css';
 import DashBoardPanel from '../../components/DashBoardPanel';
 
 export default class AdminPage extends Component{

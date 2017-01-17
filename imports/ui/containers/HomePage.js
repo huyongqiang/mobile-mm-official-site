@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import '../styles/homepage.css';
+import '../styles/home_page.css';
 import React, {Component} from 'react';
 import Footer from '../Footer';
 

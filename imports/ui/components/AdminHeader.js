@@ -4,7 +4,7 @@
 'use strict';
 
 import React, {Component, PropTypes} from 'react';
-import '../styles/adminheader.css';
+import '../styles/admin_header.css';
 
 export default class AdminHeader extends Component{
     render(){

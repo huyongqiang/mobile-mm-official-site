@@ -4,7 +4,7 @@
 'use strict';
 
 import React, {Component} from 'react';
-import '../styles/aboutpage.css';
+import '../styles/about_page.css';
 import TimeLine from '../components/TimeLine';
 
 export default class AboutPage extends Component {
