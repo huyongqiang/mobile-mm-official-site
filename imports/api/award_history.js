@@ -8,7 +8,7 @@ import {Meteor} from 'meteor/meteor';
 
 if(Meteor.isServer) {
     Meteor.publish('award_history', function () {
-        return AwardHistory.find().fetch();
+        return AwardHistory.find();
     });
 
 
