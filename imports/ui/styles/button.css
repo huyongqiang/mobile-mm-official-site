@@ -2,9 +2,20 @@
   cursor: pointer;
   padding: 10px 20px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: dodgerblue;
+  color: #fff;
+  border: 1px solid dodgerblue;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  outline: none; }
   .normal-button i {
     font-size: 15px;
     margin-right: 3px; }
+  .normal-button:hover {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=button.css.map */

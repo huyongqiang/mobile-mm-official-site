@@ -17,12 +17,14 @@ export default class MAboutPageTab extends Component{
         return (
             <div className="MAbout-container">
                 <AdminHeader title="关于页面管理"/>
-                <div className="club-intro margin-left-right">
+                <div className="row-title margin-left-right margin-top-bottom">
                     <h2>俱乐部介绍</h2>
                     <Button title="保存" onPress={this._updateIntroOnPress.bind(this)}/>
                 </div>
                 <textarea ref="introduction" className="margin-left-right"/>
-
+                <div className="row-title margin-left-right margin-top-bottom">
+                    <h2>获奖列表</h2>
+                </div>
             </div>
         );
     }

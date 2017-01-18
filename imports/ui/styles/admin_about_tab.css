@@ -1,14 +1,22 @@
 .MAbout-container {
   display: flex;
   flex-direction: column; }
-  .MAbout-container .club-intro {
+  .MAbout-container .row-title {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-left: 4px solid dodgerblue;
+    padding-left: 10px; }
   .MAbout-container .margin-left-right {
-    margin: 15px 15px 0 15px; }
+    margin: 0 15px; }
+  .MAbout-container .margin-top-bottom {
+    margin-top: 25px;
+    margin-bottom: 13px; }
   .MAbout-container textarea {
     height: 100px;
     padding: 5px;
-    font-size: 15px; }
+    font-size: 15px;
+    outline: none;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+    overflow-y: scroll; }
 
 /*# sourceMappingURL=admin_about_tab.css.map */
