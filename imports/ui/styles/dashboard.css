@@ -25,6 +25,8 @@
       margin-right: 18px;
       margin-left: 30px;
       font-size: 19px; }
+    .dashboard-container .nav-link a:hover {
+      color: #fff; }
   .dashboard-container .nav-link .active-link {
     color: #fff;
     background-color: dodgerblue; }

@@ -6,7 +6,8 @@ header {
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 999; }
   header .logo {
     color: #fff;
     margin-left: 15%; }

@@ -27,6 +27,8 @@ export default class MAboutPageTab extends Component{
         Meteor.call('awards.insert', time, contents, (err, result)=>{
             if(result['status'] === 200){
                 MessageBox.show(result['msg']);
+            }else{
+                MessageBox.show(result['msg'], 'danger');
             }
         });
     }
