@@ -13,9 +13,13 @@ footer {
       flex-direction: column; }
       footer .list .col a {
         color: #fff;
+        width: 80px;
         margin-bottom: 10px;
         font-size: 14px;
-        font-weight: 100; }
+        font-weight: 100;
+        text-decoration: none; }
+        footer .list .col a:hover {
+          text-decoration: underline; }
   footer label {
     color: #fff;
     margin-top: 50px;

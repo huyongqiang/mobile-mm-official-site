@@ -5,6 +5,7 @@
 
 import React, {Component} from 'react';
 import './styles/footer.css';
+import {Link} from 'react-router';
 
 export default class Footer extends Component {
     render() {
@@ -12,13 +13,13 @@ export default class Footer extends Component {
             <footer>
                 <div className="list">
                     <div className="col">
-                        <a>About Us</a>
+                        <Link to="/about">关于我们</Link>
                         <a>About Us</a>
                         <a>About Us</a>
                         <a>About Us</a>
                     </div>
                     <div className="col">
-                        <a>About Us</a>
+                        <Link to="/join">加入我们</Link>
                         <a>About Us</a>
                         <a>About Us</a>
                     </div>

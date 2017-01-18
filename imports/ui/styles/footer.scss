@@ -13,9 +13,14 @@ footer{
       flex-direction: column;
       a{
         color: #fff;
+        width: 80px;
         margin-bottom: 10px;
         font-size: 14px;
         font-weight: 100;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
