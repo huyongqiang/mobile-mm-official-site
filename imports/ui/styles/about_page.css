@@ -9,8 +9,8 @@
     margin: 0 auto;
     justify-content: center; }
     .about-page .row h1 {
-      font-weight: 300; }
+      margin: 30px 0; }
   .about-page .align-left {
     align-self: flex-start; }
 
-/*# sourceMappingURL=aboutpage.css.map */
+/*# sourceMappingURL=about_page.css.map */

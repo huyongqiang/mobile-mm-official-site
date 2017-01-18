@@ -1,0 +1,14 @@
+.MAbout-container {
+  display: flex;
+  flex-direction: column; }
+  .MAbout-container .club-intro {
+    display: flex;
+    justify-content: space-between; }
+  .MAbout-container .margin-left-right {
+    margin: 15px 15px 0 15px; }
+  .MAbout-container textarea {
+    height: 100px;
+    padding: 5px;
+    font-size: 15px; }
+
+/*# sourceMappingURL=admin_about_tab.css.map */

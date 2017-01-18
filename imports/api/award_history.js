@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import {AwardHistory} from '../collections/award_history';
+import {AwardHistory} from '../collections';
 import {Meteor} from 'meteor/meteor';
 import {check, Match} from 'meteor/check';
 

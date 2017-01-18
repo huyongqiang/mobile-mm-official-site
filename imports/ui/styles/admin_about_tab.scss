@@ -1,0 +1,16 @@
+.MAbout-container{
+  display: flex;
+  flex-direction: column;
+  .club-intro{
+    display: flex;
+    justify-content: space-between;
+  }
+  .margin-left-right{
+    margin: 15px 15px 0 15px;
+  }
+  textarea{
+    height: 100px;
+    padding: 5px;
+    font-size: 15px;
+  }
+}

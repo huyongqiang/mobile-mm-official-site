@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAiB;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,6BAAW;IACT,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,aAAa;EAEhC,oCAAkB;IAChB,MAAM,EAAE,gBAAgB;EAE1B,0BAAQ;IACN,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,GAAG;IACZ,SAAS,EAAE,IAAI",
+"sources": ["admin_about_tab.scss"],
+"names": [],
+"file": "admin_about_tab.css"
+}

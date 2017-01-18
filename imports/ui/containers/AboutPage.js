@@ -8,13 +8,14 @@ import '../styles/about_page.css';
 import TimeLine from '../components/TimeLine';
 import Footer from '../Footer';
 import {Meteor} from 'meteor/meteor';
-import {AwardHistory} from '../../collections/award_history';
+import {AwardHistory, BasicInfo} from '../../collections';
 
 export default class AboutPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            awardList: []
+            awardList: [],
+            clubIntro: ''
         };
     }
 
@@ -24,6 +25,12 @@ export default class AboutPage extends Component {
             onReady: () => {
                 const list = AwardHistory.find().fetch();
                 this.setState({awardList: list});
+            }
+        });
+        Meteor.subscribe('club.introduction', {
+            onReady: () => {
+                const data = BasicInfo.find().fetch()[0];
+                this.setState({clubIntro: data.clubIntro});
             }
         });
     }
@@ -36,9 +43,7 @@ export default class AboutPage extends Component {
                         <h1>关于移动MM俱乐部</h1>
                     </div>
                     <div className="row">
-                        <label>移动Mobile Market创新俱乐部创立于2011年3月7日。
-                            俱乐部的宗旨在提高俱乐部成员移动应用程序开发的综合能力，
-                            为对移动应用程序开发感兴趣的同学搭建一个服务，实践学习的交流平台。</label>
+                        <label>{this.state.clubIntro}</label>
                     </div>
                     {this.state.awardList.map((item, i) => {
                         return (

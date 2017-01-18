@@ -13,7 +13,7 @@ export default class MessageBox {
  * @param pos: 距离最上方的高度，默认 100px
  * @param time: 显示时间，默认 2s
  */
-MessageBox.show = function (msg, type = 'success', time = 2000, pos = '100px') {
+MessageBox.show = function (msg, type = 'success', time = 2000, pos = '50px') {
     document.querySelector('.msg-box-default').innerText = msg;
     document.querySelector('.msg-box-default').className = `msg-box-default ${type}`;
     document.querySelector('.msg-box-default').style.visibility = 'visible';
