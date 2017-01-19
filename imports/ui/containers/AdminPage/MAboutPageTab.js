@@ -118,6 +118,11 @@ export default class MAboutPageTab extends Component{
 }
 
 class AddEventContents extends Component{
+    constructor(props){
+        super(props);
+        this._messageShow = this._messageShow.bind(this);
+    }
+
     render(){
         const {isAddBtn} = this.props;
         return (
@@ -143,20 +148,26 @@ class AddEventContents extends Component{
         }
         if(this.props.isAddBtn) {
             Meteor.call('awards.insert', time, event, (err, result) => {
-                if (result['status'] === 200) {
-                    MessageBox.show(result['msg']);
-                } else {
-                    MessageBox.show(result['msg'], 'danger');
-                }
+                this._messageShow(result);
             });
         }else{
-
+            Meteor.call('awards.update', this.props.contents._id, time, event, (err, result) => {
+                this._messageShow(result);
+            });
         }
     }
 
     _resetBtnOnPress(){
         ReactDOM.findDOMNode(this.refs.time).value = '';
         ReactDOM.findDOMNode(this.refs.event).value = '';
+    }
+
+    _messageShow(result){
+        if(result['status'] === 200){
+            MessageBox.show(result['msg']);
+        }else{
+            MessageBox.show(result['msg'], 'danger');
+        }
     }
 }
 

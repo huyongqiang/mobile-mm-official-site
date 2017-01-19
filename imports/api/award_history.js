@@ -38,6 +38,14 @@ if(Meteor.isServer) {
             }else{
                 return {'status': 401, 'msg': 'Data Do Not Exist'};
             }
+        },
+        'awards.update'(_id, time, event){
+            try {
+                AwardHistory.update({_id: _id}, {$set: {time: time, event: event}});
+                return {'status': 200, 'msg': 'Update Data Successfully'};
+            } catch (e) {
+                return {'status': 400, 'msg': 'Update Data Failed'};
+            }
         }
     });
 }
