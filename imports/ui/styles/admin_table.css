@@ -1,10 +1,23 @@
 .admin-table {
   width: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-bottom: 20px; }
   .admin-table th, .admin-table td {
     border: 1px solid #ccc;
     padding: 8px; }
+  .admin-table th {
+    background-color: #fff; }
+    .admin-table th:nth-child(1) {
+      width: 100px; }
+    .admin-table th:nth-child(3) {
+      width: 130px; }
   .admin-table td {
     height: 60px; }
+    .admin-table td:nth-child(3) {
+      text-align: center; }
+  .admin-table tr:nth-child(odd) {
+    background-color: #F3F4F9; }
+  .admin-table tr:nth-child(even) {
+    background-color: #fff; }
 
 /*# sourceMappingURL=admin_table.css.map */

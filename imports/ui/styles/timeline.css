@@ -1,7 +1,7 @@
 .timeline-container {
   display: flex;
   width: 100%;
-  margin-top: 25px; }
+  margin-bottom: 25px; }
   .timeline-container .timeline-icon {
     width: 40px;
     height: 40px;

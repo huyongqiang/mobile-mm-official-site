@@ -1,11 +1,36 @@
 .admin-table{
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 20px;
   th, td{
     border: 1px solid #ccc;
     padding: 8px;
   }
+  th{
+    background-color: #fff;
+    &:nth-child(1){
+      width: 100px;
+    }
+    &:nth-child(3){
+      width: 130px;
+    }
+  }
   td{
     height: 60px;
+    &:nth-child(3) {
+      text-align: center;
+    }
+  }
+  tr{
+    &:nth-child(odd) {
+      background-color: #F3F4F9;
+    }
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+    //&:hover {
+    //  background-color: rgba(0, 0, 0, 0.65);
+    //  color: #fff;
+    //}
   }
 }

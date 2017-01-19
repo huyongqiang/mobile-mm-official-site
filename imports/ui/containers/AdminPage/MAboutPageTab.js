@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
 import AdminHeader from '../../components/AdminHeader';
 import {Meteor} from 'meteor/meteor';
@@ -19,7 +19,9 @@ export default class MAboutPageTab extends Component{
         super(props);
         this.state = {
             rowData: [],
-            modalVisible: false
+            modalVisible: false,
+            modalDefaultContents: {},
+            isAddBtn: true
         };
     }
 
@@ -45,9 +47,9 @@ export default class MAboutPageTab extends Component{
                 </div>
                 <Modal
                     visible={this.state.modalVisible}
-                    title="添加事件"
+                    title={this.state.isAddBtn ? '添加事件' : '更新事件'}
                     closeCallback={()=>{this.setState({modalVisible: false})}}>
-                    <AddEventContents />
+                    <AddEventContents contents={this.state.modalDefaultContents} isAddBtn={this.state.isAddBtn}/>
                 </Modal>
             </div>
         );
@@ -76,11 +78,19 @@ export default class MAboutPageTab extends Component{
     }
 
     _addAwardEventOnPress(){
-        this.setState({modalVisible: true});
+        this.setState({
+            modalVisible: true,
+            isAddBtn: true,
+            modalDefaultContents: {}
+        });
     }
 
     _updateAwardEventCallback(index){
-        console.log(index);
+        this.setState({
+            isAddBtn: false,
+            modalVisible: true,
+            modalDefaultContents: this.state.rowData[index]
+        });
     }
 
     _deleteAwardEventCallback(index){
@@ -97,13 +107,6 @@ export default class MAboutPageTab extends Component{
         });
     }
 
-    _submitOnPress(){
-        const time = ReactDOM.findDOMNode(this.refs.time).value.trim();
-        const event = ReactDOM.findDOMNode(this.refs.contents).value.trim();
-        Meteor.call('awards.insert', time, event, (err, result)=>{
-            this._messageShow(result);
-        });
-    }
 
     _messageShow(result){
         if(result['status'] === 200){
@@ -116,16 +119,48 @@ export default class MAboutPageTab extends Component{
 
 class AddEventContents extends Component{
     render(){
+        const {isAddBtn} = this.props;
         return (
             <div className="admin-about-model-contents">
                 <div className="contents">
-                    <input type="text" ref="time" className="input-text" placeholder="时间"/>
-                    <textarea ref="event" className="input-textarea" style={{marginTop: '10px'}} placeholder="获奖内容..."/>
+                    <input type="text" ref="time" className="input-text" placeholder="时间" defaultValue={this.props.contents.time}/>
+                    <textarea ref="event" className="input-textarea" style={{marginTop: '10px'}} placeholder="获奖内容..." defaultValue={this.props.contents.event}/>
                 </div>
                 <div className="btn-group">
-                    <button className="input-button btn-success">Add</button>
+                    <button className="input-button btn-success" onClick={this._addBtnOnPress.bind(this)}>{isAddBtn ? '添加' : '更新'}</button>
+                    <button className="input-button btn-default" onClick={this._resetBtnOnPress.bind(this)} style={{marginRight: '10px'}}>重置</button>
                 </div>
             </div>
         );
     }
+
+    _addBtnOnPress(){
+        const time = ReactDOM.findDOMNode(this.refs.time).value.trim();
+        const event = ReactDOM.findDOMNode(this.refs.event).value.trim();
+        if(time.length <=0 || event.length <=0 ){
+            MessageBox.show('Contents are Null', 'danger');
+            return;
+        }
+        if(this.props.isAddBtn) {
+            Meteor.call('awards.insert', time, event, (err, result) => {
+                if (result['status'] === 200) {
+                    MessageBox.show(result['msg']);
+                } else {
+                    MessageBox.show(result['msg'], 'danger');
+                }
+            });
+        }else{
+
+        }
+    }
+
+    _resetBtnOnPress(){
+        ReactDOM.findDOMNode(this.refs.time).value = '';
+        ReactDOM.findDOMNode(this.refs.event).value = '';
+    }
 }
+
+AddEventContents.propTypes = {
+    contents: PropTypes.object,
+    isAddBtn: PropTypes.bool
+};

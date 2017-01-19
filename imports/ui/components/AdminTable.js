@@ -24,10 +24,10 @@ export default class AdminTable extends Component{
                             <tr key={i}>
                                 <td>{row.time}</td>
                                 <td>{row.event}</td>
-                                <th>
-                                    <button onClick={this._updateOnPress.bind(this, i)} className="input-button btn-warning">修改</button>
-                                    <button onClick={this._deleteOnPress.bind(this, i)} className="input-button btn-danger">删除</button>
-                                </th>
+                                <td>
+                                    <button onClick={this._updateOnPress.bind(this, i)} className="input-button btn-warning btn-margin">修改</button>
+                                    <button onClick={this._deleteOnPress.bind(this, i)} className="input-button btn-danger btn-margin">删除</button>
+                                </td>
                             </tr>
                         );
                     })}
