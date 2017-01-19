@@ -123,8 +123,7 @@ class AddEventContents extends Component{
                     <textarea ref="event" className="input-textarea" style={{marginTop: '10px'}} placeholder="获奖内容..."/>
                 </div>
                 <div className="btn-group">
-                    <button className="input-button info">Add</button>
-                    <button className="input-button primary">Cancel</button>
+                    <button className="input-button btn-success">Add</button>
                 </div>
             </div>
         );

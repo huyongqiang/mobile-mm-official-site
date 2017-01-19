@@ -25,8 +25,8 @@ export default class AdminTable extends Component{
                                 <td>{row.time}</td>
                                 <td>{row.event}</td>
                                 <th>
-                                    <button onClick={this._updateOnPress.bind(this, i)}>修改</button>
-                                    <button onClick={this._deleteOnPress.bind(this, i)}>删除</button>
+                                    <button onClick={this._updateOnPress.bind(this, i)} className="input-button btn-warning">修改</button>
+                                    <button onClick={this._deleteOnPress.bind(this, i)} className="input-button btn-danger">删除</button>
                                 </th>
                             </tr>
                         );

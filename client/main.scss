@@ -46,15 +46,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .success {
-  background-color: rgb(223, 240, 216);
-  border: 1px solid rgb(214, 233, 198);
-  color: rgb(60, 118, 61);
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  color: #3c763d;
 }
 
 .danger {
-  background-color: rgb(242, 222, 222);
-  border: 1px solid rgb(235, 204, 209);
-  color: rgb(169, 68, 66);
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  color: #a94442;
 }
 
 .input-text{
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6{
 
 $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
 
-.default{
+.btn-default{
   border-color: #ccc;
   background-color: #fff;
   &:active{
@@ -111,7 +111,7 @@ $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
   }
 }
 
-.success{
+.btn-success{
   border-color: #4cae4c;
   background-color: #5cb85c;
   &:active{
@@ -123,7 +123,7 @@ $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
   }
 }
 
-.primary{
+.btn-primary{
   border-color: #357ebd;
   background-color: #428bca;
   &:active{
@@ -135,7 +135,7 @@ $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
   }
 }
 
-.info{
+.btn-info{
   border-color: #46b8da;
   background-color: #5bc0de;
   &:active{
@@ -147,7 +147,7 @@ $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
   }
 }
 
-.warning{
+.btn-warning{
   border-color: #eea236;
   background-color: #f0ad4e;
   &:active{
@@ -159,7 +159,7 @@ $btn-active: inset 0 3px 5px rgba(0,0,0,.125);
   }
 }
 
-.danger{
+.btn-danger{
   border-color: #d43f3a;
   background-color: #d9534f;
   &:active{
