@@ -25,6 +25,19 @@ if(Meteor.isServer) {
             }else{
                 return {'status': 401, 'msg': 'Check your Format'};
             }
+        },
+        'awards.delete'(_id){
+            const count = AwardHistory.find({_id: _id}).count();
+            if(count) {
+                try {
+                    AwardHistory.remove({_id: _id});
+                    return {'status': 200, 'msg': 'Add Data Successfully'};
+                } catch (e) {
+                    return {'status': 400, 'msg': 'Delete Data Failed'};
+                }
+            }else{
+                return {'status': 401, 'msg': 'Data Do Not Exist'};
+            }
         }
     });
 }

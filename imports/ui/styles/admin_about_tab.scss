@@ -16,10 +16,20 @@
   }
   textarea{
     height: 100px;
-    padding: 5px;
-    font-size: 15px;
-    outline: none;
-    box-shadow: inset 0 1px 5px rgba(0,0,0,.3);
-    overflow-y: scroll;
+  }
+}
+
+.admin-about-model-contents{
+  width: 500px;
+  .contents {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+  }
+  .btn-group{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 20px;
   }
 }

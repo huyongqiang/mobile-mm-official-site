@@ -1,0 +1,10 @@
+.admin-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .admin-table th, .admin-table td {
+    border: 1px solid #ccc;
+    padding: 8px; }
+  .admin-table td {
+    height: 60px; }
+
+/*# sourceMappingURL=admin_table.css.map */

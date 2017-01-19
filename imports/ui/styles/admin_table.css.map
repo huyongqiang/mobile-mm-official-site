@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;EACV,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,QAAQ;EACzB,gCAAM;IACJ,MAAM,EAAE,cAAc;IACtB,OAAO,EAAE,GAAG;EAEd,eAAE;IACA,MAAM,EAAE,IAAI",
+"sources": ["admin_table.scss"],
+"names": [],
+"file": "admin_table.css"
+}

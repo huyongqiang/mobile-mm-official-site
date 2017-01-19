@@ -48,7 +48,7 @@ export default class AboutPage extends Component {
                     {this.state.awardList.map((item, i) => {
                         return (
                             <div key={i} className="row align-left">
-                                <TimeLine time={item.time} contents={item.contents}/>
+                                <TimeLine time={item.time} contents={item.event}/>
                             </div>
                         );
                     })}
