@@ -8,7 +8,7 @@ import {Meteor} from 'meteor/meteor';
 
 if(Meteor.isServer){
     Meteor.publish('club.introduction', function () {
-       return BasicInfo.find({name: 'MM'});
+       return BasicInfo.find({name: 'MM'}, {fields: {clubIntro: 1}});
     });
 
     Meteor.methods({

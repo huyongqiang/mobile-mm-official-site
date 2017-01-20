@@ -64,7 +64,7 @@ export default class MAboutPageTab extends Component{
         });
         Meteor.subscribe('award_history', {
             onReady: ()=>{
-                const data = AwardHistory.find().fetch();
+                const data = AwardHistory.find({}, {sort: {time: -1}}).fetch();
                 this.setState({rowData: data});
             }
         });
@@ -94,7 +94,6 @@ export default class MAboutPageTab extends Component{
     }
 
     _deleteAwardEventCallback(index){
-        console.log(index);
         Meteor.call('awards.delete', this.state.rowData[index]._id, (err, result)=>{
             if(result['status'] === 200){
                 let rowData = this.state.rowData;

@@ -23,7 +23,7 @@ export default class AboutPage extends Component {
     componentDidMount() {
         Meteor.subscribe('award_history', {
             onReady: () => {
-                const list = AwardHistory.find().fetch();
+                const list = AwardHistory.find({}, {sort: {time: -1}}).fetch();
                 this.setState({awardList: list});
             }
         });
