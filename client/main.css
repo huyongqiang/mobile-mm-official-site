@@ -14,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .App {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  min-width: 852px; }
 
 .App-container {
   margin-top: 80px; }
