@@ -3,6 +3,7 @@
   flex: 1;
   height: 100%;
   min-width: 852px;
+  width: 100%;
   .left-nav{
     position: fixed;
     width: 200px;
@@ -13,5 +14,6 @@
     flex: 1;
     margin-left: 200px;
     height: 100%;
+    width: 100%;
   }
 }

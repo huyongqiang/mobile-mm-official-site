@@ -15,7 +15,7 @@ import NotFoundPage from '../imports/ui/containers/NotFoundPage';
 import AdminHomeTab from '../imports/ui/containers/AdminPage/HomeTab';
 import AdminSettingsTab from '../imports/ui/containers/AdminPage/SettingsTab';
 import AdminMAboutPageTab from '../imports/ui/containers/AdminPage/MAboutPageTab';
-import AdminMNewsPageTab from '../imports/ui/containers/AdminPage/MNewsPageTab';
+import AdminAddNewsTab from '../imports/ui/containers/AdminPage/AddNewsTab';
 import AdminMHomePageTab from '../imports/ui/containers/AdminPage/MHomePageTab';
 import AdminJoinTab from '../imports/ui/containers/AdminPage/JoinTab';
 
@@ -35,7 +35,7 @@ Meteor.startup(() => {
                 <Route path="settings" component={AdminSettingsTab}/>
                 <Route path="manage_about" component={AdminMAboutPageTab}/>
                 <Route path="manage_home" component={AdminMHomePageTab}/>
-                <Route path="manage_news" component={AdminMNewsPageTab}/>
+                <Route path="manage_add_news" component={AdminAddNewsTab}/>
                 <Route path="manage_join" component={AdminJoinTab}/>
             </Route>
             <Redirect from="*" to="/404"/>
