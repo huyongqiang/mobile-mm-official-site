@@ -1,5 +1,5 @@
 /**
- * Created by wangdi on 15/1/17.
+ * Created by wangdi on 22/1/17.
  */
 'use strict';
 
@@ -13,7 +13,7 @@ export default class MHomePageTab extends Component{
     render(){
         return (
             <div>
-                <AdminHeader title="网站首页管理"/>
+                <AdminHeader title="新闻列表管理"/>
 
             </div>
         );

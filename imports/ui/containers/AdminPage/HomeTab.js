@@ -10,7 +10,7 @@ export default class HomeTab extends Component{
     render(){
         return (
             <div>
-                <AdminHeader title="Home"/>
+                <AdminHeader title="Dashboard主页"/>
                 admin home tab
             </div>
         );

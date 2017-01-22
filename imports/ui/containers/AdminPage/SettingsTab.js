@@ -10,7 +10,7 @@ export default class SettingsTab extends Component{
     render(){
         return (
             <div>
-                <AdminHeader title="Settings"/>
+                <AdminHeader title="设置"/>
                 settings
             </div>
         );

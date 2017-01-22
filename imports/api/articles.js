@@ -7,8 +7,12 @@ import {Articles} from '../collections';
 import {Meteor} from 'meteor/meteor';
 
 if(Meteor.isServer){
-    Meteor.publish('article_contents', function (_id) {
+    Meteor.publish('article.contents', function (_id) {
         return Articles.find({_id: _id});
+    });
+
+    Meteor.publish('article.list', function () {
+        return Articles.find({}, {title: 1, createTime: 1});
     });
 
     Meteor.methods({
