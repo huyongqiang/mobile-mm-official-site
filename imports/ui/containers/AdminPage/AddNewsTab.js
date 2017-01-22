@@ -37,13 +37,11 @@ export default class AddNewsTab extends Component{
         return (
             <div className="add-news-container">
                 <AdminHeader title="添加新闻"/>
-                <div className="row">
-                    <input ref="title" type="text" placeholder="输入标题"/>
-                </div>
+                <input ref="title" type="text" placeholder="输入标题"/>
                 <Editor
-                    wrapperStyle={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}
-                    editorStyle={{backgroundColor: '#fff', height: '350px', width: '98%', paddingTop: 0, border: '1px solid #aaa'}}
-                    toolbarStyle={{width: '97%', border: '1px solid #aaa'}}
+                    wrapperStyle={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 10px'}}
+                    editorStyle={{backgroundColor: '#fff', height: '350px', border: '1px solid #aaa'}}
+                    toolbarStyle={{border: '1px solid #aaa', padding: '6px 0'}}
                     editorState={this.state.editorState}
                     onEditorStateChange={this._onEditorStateChange.bind(this)}
                 />
