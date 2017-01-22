@@ -1,3 +1,17 @@
-.news-template-page{
-
+.news-template-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .contents{
+    width: 66%;
+    margin: 0 auto 20px auto;
+  }
+  h1{
+    width: 66%;
+    margin: 30px auto 10px auto;
+  }
+  label{
+    margin: 0 auto;
+    font-weight: 400;
+  }
 }
