@@ -6,6 +6,8 @@
   align-items: center; }
   .join-page h1 {
     margin: 30px 0; }
+  .join-page label {
+    margin-bottom: 40px; }
   .join-page form {
     display: flex;
     flex-direction: column;

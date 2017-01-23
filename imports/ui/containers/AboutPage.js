@@ -42,7 +42,7 @@ export default class AboutPage extends Component {
                     <div className="row">
                         <h1>关于移动MM俱乐部</h1>
                     </div>
-                    <div className="row" style={{marginBottom: '25px'}}>
+                    <div className="row" style={{marginBottom: '40px'}}>
                         <label>{this.state.clubIntro}</label>
                     </div>
                     {this.state.awardList.map((item, i) => {
