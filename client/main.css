@@ -83,6 +83,12 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   border: 1px solid; }
 
+.option-select {
+  height: 33px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none; }
+
 .btn-default {
   border-color: #ccc;
   background-color: #fff;

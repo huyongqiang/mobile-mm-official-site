@@ -15,6 +15,7 @@
       display: flex;
       width: 100%;
       align-items: flex-start;
+      justify-content: center;
       margin-bottom: 30px;
       .left-part{
         flex: 30;
@@ -29,11 +30,17 @@
         width: 100%;
         .join-text{
           height: 15px;
-          width: 100%;
+          width: 95%;
         }
         .join-textarea{
-          width: 100%;
+          width: 95%;
           height: 80px;
+        }
+        .join-btn{
+          width: 100%;
+        }
+        .join-option{
+          width: 100%;
         }
       }
     }
