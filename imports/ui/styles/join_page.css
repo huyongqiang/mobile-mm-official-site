@@ -35,5 +35,8 @@
           width: 100%; }
         .join-page form .row .right-part .join-option {
           width: 100%; }
+        .join-page form .row .right-part .class-details {
+          display: flex;
+          width: 100%; }
 
 /*# sourceMappingURL=join_page.css.map */

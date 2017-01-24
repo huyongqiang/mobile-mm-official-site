@@ -5,9 +5,16 @@
 
 import '../styles/join_page.css';
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import Footer from '../Footer';
+import MessageBox from '../components/MessageBox';
 
 export default class AwardPage extends Component{
+    constructor(props){
+        super(props);
+        this.year = new Date().getFullYear();
+    }
+
     render(){
         return (
             <div className="App-container">
@@ -36,7 +43,15 @@ export default class AwardPage extends Component{
                                 <label>专业 <span>*</span></label>
                             </div>
                             <div className="right-part">
-                                <input type="text" ref="major" placeholder="专业" className="input-text join-text" required="required"/>
+                                <div className="class-details">
+                                    <select ref="grade" className="option-select" style={{marginRight: '15px'}}>
+                                        <option value={this.year-3}>{this.year-3}级</option>
+                                        <option value={this.year-2}>{this.year-2}级</option>
+                                        <option value={this.year-1}>{this.year-1}级</option>
+                                        <option value={this.year}>{this.year}级</option>
+                                    </select>
+                                    <input type="text" ref="major" placeholder="专业" className="input-text join-text" required="required"/>
+                                </div>
                             </div>
                         </div>
                         <div className="row">
@@ -44,11 +59,11 @@ export default class AwardPage extends Component{
                                 <label>兴趣方向 <span>*</span></label>
                             </div>
                             <div className="right-part">
-                                <select className="option-select join-option">
-                                    <option>手机App</option>
-                                    <option>手机游戏</option>
-                                    <option>设计</option>
-                                    <option>其他</option>
+                                <select ref="direction" className="option-select join-option">
+                                    <option value="手机App">手机App</option>
+                                    <option value="手机游戏">手机游戏</option>
+                                    <option value="设计">设计</option>
+                                    <option value="其他">其他</option>
                                 </select>
                             </div>
                         </div>
@@ -75,6 +90,24 @@ export default class AwardPage extends Component{
 
     _submitOnPress(event){
         event.preventDefault();
-        console.log('dasdasda');
+        const name = ReactDOM.findDOMNode(this.refs.name).value.trim();
+        const contact = ReactDOM.findDOMNode(this.refs.contact).value.trim();
+        const major = ReactDOM.findDOMNode(this.refs.grade).value + '级' + ReactDOM.findDOMNode(this.refs.major).value.trim();
+        const direction = ReactDOM.findDOMNode(this.refs.direction).value;
+        const reason = ReactDOM.findDOMNode(this.refs.reason).value.trim();
+
+        Meteor.call('candidate.add', name, contact, major, direction, reason, (err, result)=>{
+            if(result['status'] === 200)
+                MessageBox.show(result['msg']);
+            else
+                MessageBox.show(result['msg']);
+        });
+    }
+
+    _cleanAll(){
+        ReactDOM.findDOMNode(this.refs.name).value = '';
+        ReactDOM.findDOMNode(this.refs.contact).value = '';
+        ReactDOM.findDOMNode(this.refs.major).value = '';
+        ReactDOM.findDOMNode(this.refs.reason).value = '';
     }
 }
