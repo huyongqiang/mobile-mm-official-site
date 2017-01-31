@@ -24,7 +24,7 @@ export default class Footer extends Component {
                         <a>About Us</a>
                     </div>
                     <div className="col">
-                        <a>About Us</a>
+                        <Link to="/admin/home">Admin入口</Link>
                         <a>About Us</a>
                         <a>About Us</a>
                     </div>

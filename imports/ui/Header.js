@@ -19,7 +19,7 @@ export default class Header extends React.Component{
                         <li><Link to="/news" activeClassName="active-link">俱乐部新闻</Link></li>
                         <li><Link to="/join" activeClassName="active-link">加入我们</Link></li>
                         <li><Link to="/about" activeClassName="active-link">关于MM</Link></li>
-                        <li><Link to="/admin/home" activeClassName="active-link">Admin</Link></li>
+                        {/*<li><Link to="/admin/home" activeClassName="active-link">Admin</Link></li>*/}
                     </ul>
                 </div>
             </header>

@@ -34,7 +34,7 @@ export default class MAboutPageTab extends Component{
                     <h2>俱乐部介绍</h2>
                     <Button title="更新" onPress={this._updateIntroOnPress.bind(this)}/>
                 </div>
-                <textarea ref="introduction" className="margin-left-right input-textarea"/>
+                <textarea ref="introduction" className="margin-left-right input-textarea" placeholder="介绍点什么吧"/>
                 <div className="row-title margin-left-right margin-top-bottom">
                     <h2>获奖列表</h2>
                     <Button title="添加记录" onPress={this._addAwardEventOnPress.bind(this)}/>
@@ -59,7 +59,7 @@ export default class MAboutPageTab extends Component{
         Meteor.subscribe('club.introduction', {
             onReady: ()=>{
                 const data = BasicInfo.find().fetch()[0];
-                ReactDOM.findDOMNode(this.refs.introduction).value = data.clubIntro;
+                ReactDOM.findDOMNode(this.refs.introduction).value = data.clubIntro ? data.clubIntro : '';
             }
         });
         Meteor.subscribe('award_history', {
