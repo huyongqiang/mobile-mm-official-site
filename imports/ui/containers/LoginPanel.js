@@ -19,5 +19,3 @@ export default class LoginPanel extends Component{
         );
     }
 }
-
-ReactDOM.render(<LoginPanel />, document.getElementById('login'));

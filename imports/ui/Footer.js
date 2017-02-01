@@ -4,8 +4,10 @@
 'use strict';
 
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import './styles/footer.css';
 import {Link} from 'react-router';
+import LoginPanel from './containers/LoginPanel';
 
 export default class Footer extends Component {
     render() {
@@ -25,7 +27,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="col">
                         <Link to="/admin/home">Admin入口</Link>
-                        <a>About Us</a>
+                        <button onClick={()=>{ReactDOM.render(<LoginPanel />, document.getElementById('login'));}}>Admin</button>
                         <a>About Us</a>
                     </div>
                 </div>

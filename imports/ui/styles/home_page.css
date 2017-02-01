@@ -10,13 +10,15 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    margin-top: -5px; }
+    margin: -4px auto 0 auto; }
     .home-container .latest-news h1 {
       font-weight: 100;
       margin: 30px 0; }
     .home-container .latest-news .row {
+      width: 70%;
       display: flex;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      flex-wrap: wrap; }
   .home-container .info-1 {
     margin-top: 10px;
     display: flex;
@@ -35,7 +37,8 @@
   margin: 0 7px;
   background-color: transparent;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  align-items: center; }
   .thumbnail .container {
     display: flex;
     flex-direction: column; }

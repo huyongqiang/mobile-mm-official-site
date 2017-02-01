@@ -21,12 +21,13 @@ export default class HomePage extends Component {
                             <Thumbnail />
                             <Thumbnail />
                             <Thumbnail />
-                        </div>
-                        <div className="row">
                             <Thumbnail />
                             <Thumbnail />
                             <Thumbnail />
                         </div>
+                        {/*<div className="row">*/}
+                            {/**/}
+                        {/*</div>*/}
                     </div>
                     <div className="info-1">
                         <h1>快点加入我们</h1>
