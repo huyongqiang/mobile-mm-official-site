@@ -7,6 +7,9 @@ import {Candidates} from '../collections';
 import {Meteor} from 'meteor/meteor';
 
 if(Meteor.isServer){
+    Meteor.publish('candidates.info', function () {
+        return Candidates.find();
+    });
 
     Meteor.methods({
         'candidate.add'(name, contact, major, direction, reason){
