@@ -27,7 +27,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="col">
                         <Link to="/admin/home">Admin入口</Link>
-                        <button onClick={()=>{ReactDOM.render(<LoginPanel />, document.getElementById('login'));}}>Admin</button>
+                        <button className="foot-btn" onClick={()=>{ReactDOM.render(<LoginPanel />, document.getElementById('login'));}}>Admin入口</button>
                         <a>About Us</a>
                     </div>
                 </div>
