@@ -37,9 +37,10 @@ footer .foot-btn {
   text-align: left;
   font-size: 14px;
   font-weight: 100;
-  height: 21px;
+  height: 20px;
   padding: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   footer .foot-btn:hover {
     text-decoration: underline; }
 

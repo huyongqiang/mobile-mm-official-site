@@ -5,3 +5,4 @@ import '../../api/award_history';
 import '../../api/basic_information';
 import '../../api/articles';
 import '../../api/candidates';
+import '../../api/users';
