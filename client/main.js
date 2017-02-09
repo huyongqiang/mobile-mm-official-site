@@ -32,6 +32,7 @@ Meteor.startup(() => {
                 <Route path="/404" component={NotFoundPage}/>
             </Route>
             <Route path="/admin" component={AdminPage}>
+                <IndexRoute component={AdminHomeTab}/>
                 <Route path="home" component={AdminHomeTab}/>
                 <Route path="settings" component={AdminSettingsTab}/>
                 <Route path="manage_news" component={AdminMNewsPageTab}/>
