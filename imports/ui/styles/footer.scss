@@ -1,35 +1,11 @@
 footer{
   display: flex;
-  height: 300px;
   background-color: rgb(0,0,0);
-  flex-direction: column;
-  padding: 0 18%;
-  justify-content: center;
-  .list {
-    display: flex;
-    .col {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      a{
-        color: #fff;
-        width: 80px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 100;
-        text-decoration: none;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        &:hover{
-          text-decoration: underline;
-        }
-      }
-    }
-  }
+  padding: 20px 18%;
+  align-items: center;
+  justify-content: space-between;
   label{
     color: #fff;
-    margin-top: 50px;
     font-size: 13px;
   }
 }
@@ -39,9 +15,8 @@ footer .foot-btn{
   width: 80px;
   color: #fff;
   border: none;
-  margin-bottom: 10px;
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 100;
   height: 20px;
   padding: 0;
